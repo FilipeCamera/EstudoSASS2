@@ -1,0 +1,32 @@
+@use "sass:math";
+
+@mixin fix($property, $jty-ctn) {
+  display: flex;
+  #{$property}: $jty-ctn;
+}
+
+@mixin for-phone-only {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@function calculateRem($size) {
+  @return math.div($size, 16px) * 1rem;
+}
+
+@mixin fontSize($size) {
+  font-size: calculateRem($size);
+}
