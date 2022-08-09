@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+
+    <title>Estudo SASS</title>
+  </head>
+  <body>
+    <header class="header">
+      <figure class="header__logo">
+        <img src="/assets/img/logo.png" alt="Logo" class="header__img" />
+      </figure>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__links">
+            <a class="menu__link" href="index.html">Página inicial</a>
+          </li>
+          <li class="menu__links">
+            <a class="menu__link" href="about.html">Sobre nós</a>
+          </li>
+          <li class="menu__links">
+            <a class="menu__link" href="index.html">Cães</a>
+          </li>
+          <li class="menu__links">
+            <a class="menu__link" href="index.html">Gatos</a>
+          </li>
+          <li class="menu__links">
+            <a class="menu__link" href="index.html">Passáros</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__content">
+        <article class="main__post">
+          <a href="#" class="main__title"
+            >Cuidados com animais durante a quarentena</a
+          >
+          <div class="main__subtitle">
+            <p class="main__date">09/08/2022</p>
+            <span class="main__tag">Cães</span>
+          </div>
+          <div class="main__details">
+            <img src="/assets/img/dog.jpg" alt="Cachorro" class="main__img" />
+            <p class="main__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a href="#" class="main__button">Ler mais</a>
+            <div class="main__info">
+              <div class="main__author">
+                <p class="main__p">by Filipe</p>
+              </div>
+              <div class="main__comments">
+                <a href="#" class="main__a">3 comments</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="main__sidebar sidebar">
+        <aside class="sidebar__top">
+          <p class="sidebar__title">Top posts</p>
+          <ul class="sidebar__posts">
+            <li class="sidebar__list">
+              <img
+                src="/assets/img/dog.jpg"
+                alt="Cachorro"
+                class="sidebar__img"
+              />
+              <div class="sidebar_details">
+                <a href="index.html" class="sidebar__post-title"
+                  >Adotar um dog: tudo que você precisa saber</a
+                >
+                <p class="sidebar__post-date">20/06/2022</p>
+              </div>
+            </li>
+            <li class="sidebar__list">
+              <img
+                src="/assets/img/dog.jpg"
+                alt="Cachorro"
+                class="sidebar__img"
+              />
+              <div class="sidebar_details">
+                <a href="index.html" class="sidebar__post-title"
+                  >Adotar um dog: tudo que você precisa saber</a
+                >
+                <p class="sidebar__post-date">20/06/2022</p>
+              </div>
+            </li>
+            <li class="sidebar__list">
+              <img
+                src="/assets/img/dog.jpg"
+                alt="Cachorro"
+                class="sidebar__img"
+              />
+              <div class="sidebar_details">
+                <a href="index.html" class="sidebar__post-title"
+                  >Adotar um dog: tudo que você precisa saber</a
+                >
+                <p class="sidebar__post-date">20/06/2022</p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer">
+      <figure class="footer__logo">
+        <img
+          src="/assets/img/footer-logo.png"
+          alt="Footer logo"
+          class="footer__img"
+        />
+      </figure>
+      <p class="footer__text">2021 estudo SASS. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
